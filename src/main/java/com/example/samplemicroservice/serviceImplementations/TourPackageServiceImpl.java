@@ -22,11 +22,11 @@ public class TourPackageServiceImpl implements TourPackageService {
 
     @Override
     public Long total() {
-        return null;
+        return tourPackageRepository.count();
     }
 
     @Override
     public List<TourPackage> lookup() {
-        return null;
+        return tourPackageRepository.findAll();
     }
 }
